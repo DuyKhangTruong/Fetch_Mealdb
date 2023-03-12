@@ -27,3 +27,4 @@ When the user selects a meal, they should be taken to a detail view that include
 ## Technology
 - iOS 14 and above
 - SwiftUI
+- KingFisher
