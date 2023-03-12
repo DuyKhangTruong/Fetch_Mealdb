@@ -20,6 +20,7 @@ class RecipeViewModel: ObservableObject {
     }
 }
 
+//MARK: - Fetching data
 extension RecipeViewModel {
     private func fetchRecipe() {
         cancellable = URLSession.shared.dataTaskPublisher(for: URL(string: MealsAPI.getURLString(forMealID: self.meal.mealID))!)
@@ -31,7 +32,7 @@ extension RecipeViewModel {
                 }
                 else
                 {
-                    print("error")
+                    print("[ERROR] Fetching data")
                 }
             }
     }

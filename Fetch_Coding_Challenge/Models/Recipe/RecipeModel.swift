@@ -25,6 +25,9 @@ extension Recipe {
         var index = 1
         var ingredients: [Ingredient] = []
         
+        // Loop throught the data of recipe JSON to check which ingredients and measurement
+        // required and add them to array. Instead of creating Coding Keys for 20 ingredients
+        // and instrument
         while let ingredient = recipeHashMap["strIngredient\(index)"] as? String,
               let measure = recipeHashMap["strMeasure\(index)"] as? String,
               !ingredient.isEmpty, !measure.isEmpty

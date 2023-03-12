@@ -17,6 +17,7 @@ class MealsViewModel: ObservableObject {
     }
 }
 
+// MARK: - Fetching data
 extension MealsViewModel {
         private func fetchMeals() {
             cancellable = URLSession.shared.dataTaskPublisher(for: URL(string: MealsAPI.getURLString(forCategory: Constants.requiredCatelog))!)
@@ -24,6 +25,10 @@ extension MealsViewModel {
                 .sink { _ in} receiveValue: { data, _ in
                     if let mealData = try? JSONDecoder().decode(MealJSONResponse.self, from: data) {
                         self.meals = mealData.array
+                    }
+                    else
+                    {
+                        print("[ERROR] Fetching data")
                     }
                 }
         }
