@@ -10,7 +10,7 @@ import SwiftUI
 struct RecipeTagsCard: View {
     let recipe: Recipe
     var body: some View {
-        VStack(alignment: .center, spacing: 10) {
+        VStack(alignment: .leading, spacing: 10) {
             Text("Tags")
                 .foregroundColor(.secondary)
                 .font(.system(size: 16, weight: .medium))
@@ -18,7 +18,7 @@ struct RecipeTagsCard: View {
                 .font(.system(size: 18, weight: .bold))
         }
         .padding(20)
-        .frame(maxWidth: .infinity)
+        .frame(maxWidth: .infinity,alignment: .leading)
         .modifier(RecipeCard())
     }
 }

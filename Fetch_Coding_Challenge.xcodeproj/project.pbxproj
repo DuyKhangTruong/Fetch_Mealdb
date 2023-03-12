@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		82359CAD29BD551300C8F687 /* JSONResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82359CAC29BD551300C8F687 /* JSONResponse.swift */; };
+		82359CAF29BD55AB00C8F687 /* MealJSONResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82359CAE29BD55AB00C8F687 /* MealJSONResponse.swift */; };
+		82359CB129BD579000C8F687 /* RecipeJSONResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82359CB029BD579000C8F687 /* RecipeJSONResponse.swift */; };
 		8298D7EC29B9A48D003D4EFA /* Fetch_Coding_ChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8298D7EB29B9A48D003D4EFA /* Fetch_Coding_ChallengeApp.swift */; };
 		8298D7EE29B9A48D003D4EFA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8298D7ED29B9A48D003D4EFA /* ContentView.swift */; };
 		8298D7F029B9A48E003D4EFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8298D7EF29B9A48E003D4EFA /* Assets.xcassets */; };
@@ -33,6 +36,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		82359CAC29BD551300C8F687 /* JSONResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONResponse.swift; sourceTree = "<group>"; };
+		82359CAE29BD55AB00C8F687 /* MealJSONResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealJSONResponse.swift; sourceTree = "<group>"; };
+		82359CB029BD579000C8F687 /* RecipeJSONResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeJSONResponse.swift; sourceTree = "<group>"; };
 		8298D7E829B9A48D003D4EFA /* Fetch_Coding_Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fetch_Coding_Challenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8298D7EB29B9A48D003D4EFA /* Fetch_Coding_ChallengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fetch_Coding_ChallengeApp.swift; sourceTree = "<group>"; };
 		8298D7ED29B9A48D003D4EFA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -123,6 +129,7 @@
 		8298D7FC29B9C4F1003D4EFA /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				82359CAC29BD551300C8F687 /* JSONResponse.swift */,
 				8298D82829BBA325003D4EFA /* Recipe */,
 				8298D82729BBA2F4003D4EFA /* Meal */,
 			);
@@ -176,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				8298D82929BBA347003D4EFA /* MealModel.swift */,
+				82359CAE29BD55AB00C8F687 /* MealJSONResponse.swift */,
 			);
 			path = Meal;
 			sourceTree = "<group>";
@@ -185,6 +193,7 @@
 			children = (
 				8298D82B29BBA389003D4EFA /* RecipeModel.swift */,
 				8298D82D29BBA397003D4EFA /* IngredientModel.swift */,
+				82359CB029BD579000C8F687 /* RecipeJSONResponse.swift */,
 			);
 			path = Recipe;
 			sourceTree = "<group>";
@@ -271,6 +280,7 @@
 				8298D82229BB23FC003D4EFA /* IngredientView.swift in Sources */,
 				8298D83229BC52D8003D4EFA /* RecipeTagsCard.swift in Sources */,
 				8298D82E29BBA397003D4EFA /* IngredientModel.swift in Sources */,
+				82359CAD29BD551300C8F687 /* JSONResponse.swift in Sources */,
 				8298D81029BAF971003D4EFA /* MealRow.swift in Sources */,
 				8298D81229BAFDA6003D4EFA /* RecipeView.swift in Sources */,
 				8298D81A29BB22F3003D4EFA /* RecipeCard.swift in Sources */,
@@ -281,8 +291,10 @@
 				8298D81E29BB2331003D4EFA /* RecipeIngredientsCard.swift in Sources */,
 				8298D80A29BACD0A003D4EFA /* Constants.swift in Sources */,
 				8298D82029BB2364003D4EFA /* RecipeInstructionsCard.swift in Sources */,
+				82359CAF29BD55AB00C8F687 /* MealJSONResponse.swift in Sources */,
 				8298D7EC29B9A48D003D4EFA /* Fetch_Coding_ChallengeApp.swift in Sources */,
 				8298D80629BAC74B003D4EFA /* MealsViewModel.swift in Sources */,
+				82359CB129BD579000C8F687 /* RecipeJSONResponse.swift in Sources */,
 				8298D82C29BBA389003D4EFA /* RecipeModel.swift in Sources */,
 				8298D83029BC4B3F003D4EFA /* RecipeInfoCard.swift in Sources */,
 			);

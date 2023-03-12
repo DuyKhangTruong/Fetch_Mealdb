@@ -7,10 +7,6 @@
 
 import Foundation
 
-struct MealData: Decodable {
-    let meals: [Meal]
-}
-
 struct Meal: Decodable, Identifiable {
     let id = UUID()
     let mealName: String

@@ -12,7 +12,7 @@ struct MealsView: View {
     
     var body: some View {
         List(self.viewModel.meals, rowContent: MealRow.init)
-            .navigationBarTitle(Constants.requiredCatelog)
+            .navigationBarTitle("Pick your dessert today")
     }
 }
 

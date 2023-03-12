@@ -25,9 +25,9 @@ extension RecipeViewModel {
         cancellable = URLSession.shared.dataTaskPublisher(for: URL(string: MealsAPI.getURLString(forMealID: self.meal.mealID))!)
             .receive(on: DispatchQueue.main)
             .sink { _ in} receiveValue: { data, _ in
-                if let recipeData = try? JSONDecoder().decode(RecipeData.self, from: data)
+                if let recipeData = try? JSONDecoder().decode(RecipeJSONResponse.self, from: data)
                 {
-                    self.recipe = recipeData.meals.first
+                    self.recipe = recipeData.array.first
                 }
                 else
                 {
